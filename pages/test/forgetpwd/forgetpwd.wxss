@@ -1,0 +1,27 @@
+/* pages/test/forgetpwd/forgetpwd.wxss */
+@import "../me/loginpwd/loginpwd.wxss";
+.regiter{
+  background-color: #2D2B29;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.againpwd{
+position: relative;
+}
+.getcode{
+  position: absolute;
+  top: 10rpx;
+  right: 50rpx;
+  z-index: 99;
+  width: 210rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  line-height: 70rpx;
+  background: #C6B47A;
+  text-align: center;
+  border-radius: 8rpx;
+  color: #fff;
+}

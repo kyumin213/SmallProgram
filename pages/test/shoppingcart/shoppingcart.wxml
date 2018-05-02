@@ -1,0 +1,100 @@
+<!--pages/test/shoppingcart/shoppingcart.wxml-->
+<!--购物车  -->
+<view>
+  <!--有商品时显示  -->
+  <view wx:if="{{hasList}}">
+    <view class='goodslist' wx:for="{{carts}}" wx:key="{{index}}">
+      <view class='goodstitle'>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='goodsitems'>
+        <view class='goodsleft'>
+          <icon wx:if="{{item.selected}}" type="success" color="#C6B47A" data-index="{{index}}" data-id="{{index}}" bindtap="selectList" />
+          <icon wx:else type="circle" data-index="{{index}}" bindtap="selectList" />
+          <image class='pic' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view>
+          <view class='good_items'>
+            <text class='des'>{{item.des}}</text>
+            <image src='/images/scan_icon_2.png' class='carts-del dels' data-index="{{index}}" bindtap='delitems'></image>
+          </view>
+          <text class='speci'>{{item.spec}}</text>
+          <view class='nums'>
+            <text class='price'>￥{{item.price}}</text>
+            <!-- <text>x1</text> -->
+            <view class='edit'>
+              <text class='minus' bindtap='bindMinus' data-obj="{{obj}}" data-index="{{index}}">-</text>
+              <text>{{item.num}}</text>
+              <text class='plus' bindtap='bindPlus' data-index="{{index}}">+</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='cartbottom'>
+      <view class='allselect' bindtap="selectAll">
+        <icon wx:if="{{selectAllStatus}}" type="success" color="#C6B47A" />
+        <icon wx:else type="circle" />
+        <text class='selectAll'>全选</text>
+      </view>
+      <view class='total'>
+        <text>合计：</text>
+        <text class='totalprice'>￥{{totalPrice}}</text>
+      </view>
+      <view>
+        <button class='statements'>结算({{totalPrice}})</button>
+      </view>
+    </view>
+  </view>
+  <!--购物车为空时显示  -->
+  <view wx:else>
+    <view class='isnull'>
+      <view class='nulltop'>
+        <view class='nullshow'>
+          <view class='imgbg'>
+            <image class='showicon' src='/images/shop.png'></image>
+          </view>
+          <text class='cartnull'>购物车是空哒，快去行动吧！</text>
+          <button class='goaround'>去逛逛</button>
+        </view>
+      </view>
+      <view class='recommend'>
+        <view class='recotxt'>为你推荐</view>
+        <view class='recommendshow'>
+          <view class='shopitems'>
+            <image class='recoimg' src='/images/new_people_area.png'></image>
+            <text class='des'>冰冻活泉水保湿面膜</text>
+            <text class='price'>￥198.00</text>
+          </view>
+          <view class='shopitems'>
+            <image class='recoimg' src='/images/new_people_area.png'></image>
+            <text class='des'>冰冻活泉水保湿面膜</text>
+            <text class='price'>￥198.00</text>
+          </view>
+          <view class='shopitems'>
+            <image class='recoimg' src='/images/new_people_area.png'></image>
+            <text class='des'>冰冻活泉水保湿面膜</text>
+            <text class='price'>￥198.00</text>
+          </view>
+        </view>
+        <view class='recommendshow'>
+          <view class='shopitems'>
+            <image class='recoimg' src='/images/new_people_area.png'></image>
+            <text class='des'>冰冻活泉水保湿面膜</text>
+            <text class='price'>￥198.00</text>
+          </view>
+          <view class='shopitems'>
+            <image class='recoimg' src='/images/new_people_area.png'></image>
+            <text class='des'>冰冻活泉水保湿面膜</text>
+            <text class='price'>￥198.00</text>
+          </view>
+          <view class='shopitems'>
+            <image class='recoimg' src='/images/new_people_area.png'></image>
+            <text class='des'>冰冻活泉水保湿面膜</text>
+            <text class='price'>￥198.00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

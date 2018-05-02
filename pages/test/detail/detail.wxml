@@ -1,0 +1,143 @@
+<!--pages/test/detail/detail.wxml-->
+<!--商品详情  -->
+<view class='goods' wx:for="{{carts}}" wx:key="{{index}}">
+  <view class='centshow'>
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" indicator-color='#ccc' indicator-active-color='#f00' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image class='silde-img' src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- <image class='goodsimg' src='/images/new_people_area.png'></image>   -->
+  </view>
+  <view class='goodsdesc'>
+    <text class='desc'>酷户coofer 纸巾 抽纸  原生竹浆纸巾 18包</text>
+  </view>
+  <view class='goodsdes'>
+    <text class='presentprice'>￥79.00</text>
+    <text class='originalprice'>80.00</text>
+    <text class='reward'>奖励：79元宝</text>
+  </view>
+  <view class='express'>
+    <text>快递：0.00</text>
+    <text>库存：997件</text>
+  </view>
+  <view class='choose' bindtap='showModal'>
+    <text class="{{nums?'show':'hidden'}}">选择/数量</text>
+    <text class="{{select?'show':'hidden'}}">数量：已选{{item.num}}件</text>
+  </view>
+  <!--精品推荐  -->
+  <view class='recommend'>
+    精品推荐
+  </view>
+  <scroll-view scroll-x='true'>
+    <view class='goodslist' scroll-x='true'>
+      <view class='goodsitems'>
+        <image class='recommend-img' src='/images/home_first_sycee.png'></image>
+        <text class='recomment-des'>紫荆秀口袋靠垫</text>
+        <text class='recomment-price'>￥188.00</text>
+      </view>
+      <view class='goodsitems'>
+        <image class='recommend-img' src='/images/home_first_sycee.png'></image>
+        <text class='recomment-des'>紫荆秀口袋靠垫</text>
+        <text class='recomment-price'>￥188.00</text>
+      </view>
+      <view class='goodsitems'>
+        <image class='recommend-img' src='/images/home_first_sycee.png'></image>
+        <text class='recomment-des'>紫荆秀口袋靠垫</text>
+        <text class='recomment-price'>￥188.00</text>
+      </view>
+      <view class='goodsitems'>
+        <image class='recommend-img' src='/images/home_first_sycee.png'></image>
+        <text class='recomment-des'>紫荆秀口袋靠垫</text>
+        <text class='recomment-price'>￥188.00</text>
+      </view>
+      <view class='goodsitems'>
+        <image class='recommend-img' src='/images/home_first_sycee.png'></image>
+        <text class='recomment-des'>紫荆秀口袋靠垫</text>
+        <text class='recomment-price'>￥188.00</text>
+      </view>
+      <view class='goodsitems'>
+        <image class='recommend-img' src='/images/home_first_sycee.png'></image>
+        <text class='recomment-des'>紫荆秀口袋靠垫</text>
+        <text class='recomment-price'>￥188.00</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='bg'></view>
+  <view class='imgdetails'>
+    <view class="{{imgtxt?'on':''}}" bindtap='imgtxt'>图文详情</view>
+    <view class="{{parameter?'on':''}}" bindtap='parameter'>参数详情</view>
+  </view>
+  <view>
+    <!--图文详情  -->
+    <view class="{{imgtxt?'show':'hidden'}} imglist">
+      <view class='imgshow'>
+        <image class='imgitems' src='/images/new_people_area.png'></image>
+      </view>
+
+    </view>
+    <!--参数详情  -->
+    <view class="{{parameter?'show':'hidden'}} para"></view>
+  </view>
+  <!--选择数量  -->
+
+  <view class='footer'>
+    <view class='customer'>
+      <view class='kf'>
+        <image class='cusicon' src='/images/icon_customer_service.png'></image>
+        <text class='kftxt'>客服</text>
+      </view>
+      <view class='buy' bindtap='shopCart'>
+        <image class='buyicon' src='/images/shopping_cart_icon.png'></image>
+        <text class='kftxt' bindtap='cart'>购物车</text>
+      </view>
+      <view class='cusbtn'>
+        <button class='addbtn' bindtap='showModal'>加入购物车</button>
+        <button class='buybtn' bindtap='showModal'>立即购买</button>
+      </view>
+    </view>
+
+  </view>
+  <view class="commodity_screen" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <view class='showModels'>
+      <view class='choosenum'>
+        <view>
+          <image class='goods_img' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='goods_dec'>
+          <text class='goods_price'>￥79.00</text>
+          <text>酷户coofer 纸巾 抽纸  原生竹浆纸巾 18包</text>
+          <text class="close" bindtap='hideModals'>
+          </text>
+        </view>
+      </view>
+      <view class='speci'>
+        <text>规格</text>
+        <view>
+          <view wx:for="{{goodflowers}}" class='gui'>
+            <text data-select="{{item.id}}" data-index="{{index}}" data-flower-name="{{item.name}}" class="{{item.id==flowerSelect?'active':''}} spec" bindtap='chooseFlower'>{{item.name}}
+        </text>
+          </view>
+        </view>
+      </view>
+      <view class='num'>
+        <view class='numtxt'>
+          <text>数量</text>
+        </view>
+        <view class='add_btn'>
+          <text class="{{minusStatuses[index]}} bnt add" data-obj="{{obj}}" bindtap='bindMinus' data-index="{{index}}">-</text>
+          <!-- <input type='number' class='nums' bindchange="bindManual" value="{{item.num}}"></input> -->
+          <text class='nums'>{{item.num}}</text>
+          <text class='add' bindtap='bindPlus' data-obj="{{obj}}" data-index="{{index}}">+</text>
+        </view>
+      </view>
+      <view>
+        <button class='confirm' bindtap="hideModal">确定</button>
+      </view>
+    </view>
+
+  </view>
+</view>

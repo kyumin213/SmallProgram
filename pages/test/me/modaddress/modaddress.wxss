@@ -1,0 +1,15 @@
+/* pages/test/me/modaddress/modaddress.wxss */
+@import '../newaddress/newaddress.wxss';
+@import '../../../region/region.wxss';
+.delebtn,.prebtn{
+  width: 80%;
+  font-size: 30rpx;
+  margin-top: 40rpx;
+  color: #D9B564;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.prebtn{
+  color: #fff;
+}
+

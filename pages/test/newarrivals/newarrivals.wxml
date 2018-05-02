@@ -1,0 +1,123 @@
+<!--pages/test/newarrivals/newarrivals.wxml-->
+<!--新品推荐  -->
+<view>
+  <view class='arrivals-head fz-28'>
+    <view class="{{compre?'on':''}}" bindtap='compre'>综合</view>
+    <view class="{{sales?'on':''}}" bindtap='sales'>销量</view>
+    <view class="{{price?'on':''}}" bindtap='price'>价格</view>
+  </view>
+  <!--综合  -->
+  <view class="{{compre?'show':'hidden'}}">
+    <view class='arrivalsList fz-28'>
+      <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+      <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+            <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--销量  -->
+  <view class="{{sales?'show':'hidden'}}">
+    <view class='arrivalsList fz-28'>
+      <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+      <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+            <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--价格  -->
+  <view class="{{price?'show':'hidden'}}">
+    <view class='arrivalsList fz-28'>
+      <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>360.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+      <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+         <view class='arrivalsItems'>
+        <view class='arrivalsImgs'>
+          <image src='/images/print.jpg' class='arrivals-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

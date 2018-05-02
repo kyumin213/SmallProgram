@@ -1,0 +1,24 @@
+<!--pages/test/login/login.wxml-->
+<!--登陆  -->
+<view class='login'>
+  <form bindsubmit="formSubmit">
+    <view class='oldpwd'>
+      <image class='mimaicon' src='/images/icon_mobile.png'></image>
+      <input name='mobile' placeholder-class='phcolor' type='number' class='pwdinp' placeholder='请输入手机号码'></input>
+    </view>
+    <view class='newpwd'>
+      <image class='mimaicon' src='/images/icon_pw.png'></image>
+      <input name='newpwd' placeholder-class='phcolor' password='true' class='pwdinp' placeholder='请输入密码'></input>
+    </view>
+    <view class='submitbtn'>
+      <button formType="submit" class='sub'>登陆</button>
+    </view>
+  </form>
+  <view class='regis'>
+    <text bindtap='register'>快速注册</text>
+    <text bindtap='forgetpwd'>忘记密码</text>
+  </view>
+  <view class='logs'>
+  <image class='login-icon' src='/images/login_icon.png'></image>
+  </view>
+</view>

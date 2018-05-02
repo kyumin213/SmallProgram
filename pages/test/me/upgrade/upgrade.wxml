@@ -1,0 +1,33 @@
+<!--pages/test/me/upgrade/upgrade.wxml-->
+<!--身份升级  -->
+<view>
+  <form bindsubmit='formSubmit'>
+    <view class='identity'>
+      <text class='txt'>姓 名</text>
+      <input name='username' placeholder-class='phcolor' class='inp' placeholder='请输入姓名'></input>
+    </view>
+    <view class='identity'>
+      <text class='txt'>身份证</text>
+      <input name='cardid' placeholder-class='phcolor' maxlength='18' class='inp' placeholder='请输入身份证号'></input>
+    </view>
+    <view class='identity'>
+      <text class='txt'>详细地址</text>
+      <input name='detailaddress' placeholder-class='phcolor' class='inp' placeholder='请输入身份证详细地址'></input>
+    </view>
+    <view class='card'>
+      <view class='just'>
+        <image class='cardImg' src="{{src}}"></image>
+        <text>身份证正面照</text>
+        <button class='upload' bindtap='uploadimg'>上传</button>
+      </view>
+      <view class='just'>
+        <image class='cardImg' src="{{srctail}}"></image>
+        <text>身份证反面照</text>
+        <button class='upload' bindtap='uploadtail'>上传</button>
+      </view>
+    </view>
+    <view class='submit'>
+      <button form-type='submit' class='btn'>提交</button>
+    </view>
+  </form>
+</view>

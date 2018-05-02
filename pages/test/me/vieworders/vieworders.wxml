@@ -1,0 +1,277 @@
+<!--查看我的订单  -->
+<view class='con'>
+  <view class='ordertabs'>
+    <view class="{{allorder?'on':''}}" id='1' bindtap='allorder'>全部订单</view>
+    <view class="{{pendPay?'on':''}}" id='2' bindtap='pendPay'>待付款</view>
+    <view class="{{pendDelivery?'on':''}}" id='3' bindtap='pendDelivery'>待发货</view>
+    <view class="{{received?'on':''}}" id='4' bindtap='received'>待收货</view>
+    <view class="{{completed?'on':''}}" id='5' bindtap='completed'>已完成</view>
+  </view>
+  <view class="{{allorder?'show':'hidden'}}">
+    <view>
+      <view class='ordertitle'>
+        <text>鲜果种植销售</text>
+        <text class='orderstatus'>全部</text>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderNolist'>
+        <view class='orderNo'>
+          <text>订单编号：201804165755818473</text>
+        </view>
+        <view class='total'>
+          <text>总价:￥179.80</text>
+        </view>
+      </view>
+      <view class='btns'>
+        <view class='btnsubmit'>
+          <button class='cancel' bindtap='cancel'>取消订单</button>
+          <button class='payment'>立即支付</button>
+        </view>
+      </view>
+    </view>
+    <view class='paynull hidden'>
+      <view class='listnullicon'>
+        <image class='nullimg' src='/images/receive_rewards.png'></image>
+      </view>
+      <view class='nulldes'>
+        <text>没有数据哦</text>
+      </view>
+    </view>
+  </view>
+  <view class="{{pendPay?'show':'hidden'}}">
+    <view class='paylist'>
+      <view class='ordertitle'>
+        <text>鲜果种植销售</text>
+        <text class='orderstatus'>待付款</text>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderNolist'>
+        <view class='orderNo'>
+          <text>订单编号：201804165755818473</text>
+        </view>
+        <view class='total'>
+          <text>总价:￥179.80</text>
+        </view>
+      </view>
+      <view class='btns'>
+        <view class='btnsubmit'>
+          <button class='cancel' bindtap='cancel'>取消订单</button>
+          <button class='payment'>立即支付</button>
+        </view>
+      </view>
+    </view>
+    <view class='paynull hidden'>
+      <view class='listnullicon'>
+        <image class='nullimg' src='/images/receive_rewards.png'></image>
+      </view>
+      <view class='nulldes'>
+        <text>没有数据哦</text>
+      </view>
+    </view>
+  </view>
+  <view class="{{pendDelivery?'show':'hidden'}}">
+    <view>
+      <view class='ordertitle'>
+        <text>鲜果种植销售</text>
+        <text class='orderstatus'>待发货</text>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderNolist'>
+        <view class='orderNo'>
+          <text>订单编号：201804165755818473</text>
+        </view>
+        <view class='total'>
+          <text>总价:￥179.80</text>
+        </view>
+      </view>
+      <view class='btns'>
+        <view class='btnsubmit'>
+          <button class='payment'>等待发货</button>
+        </view>
+      </view>
+    </view>
+    <view class='paynull hidden'>
+      <view class='listnullicon'>
+        <image class='nullimg' src='/images/receive_rewards.png'></image>
+      </view>
+      <view class='nulldes'>
+        <text>没有数据哦</text>
+      </view>
+    </view>
+  </view>
+  <view class="{{received?'show':'hidden'}}">
+    <view>
+      <view class='ordertitle'>
+        <text>鲜果种植销售</text>
+        <text class='orderstatus'>待收货</text>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderNolist'>
+        <view class='orderNo'>
+          <text>订单编号：201804165755818473</text>
+        </view>
+        <view class='total'>
+          <text>总价:￥179.80</text>
+        </view>
+      </view>
+      <view class='btns'>
+        <view class='btnsubmit'>
+          <button class='payment'>确认收货</button>
+        </view>
+      </view>
+    </view>
+    <view class='paynull hidden'>
+      <view class='listnullicon'>
+        <image class='nullimg' src='/images/receive_rewards.png'></image>
+      </view>
+      <view class='nulldes'>
+        <text>没有数据哦</text>
+      </view>
+    </view>
+  </view>
+  <view class="{{completed?'show':'hidden'}}">
+    <view>
+      <view class='ordertitle'>
+        <text>鲜果种植销售</text>
+        <text class='orderstatus'>已完成</text>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderitems'>
+        <view class='itemicon'>
+          <image class='itemImage' src='/images/home_first_sycee.png'></image>
+        </view>
+        <view class='orderdes'>
+          <text class='desc'>酷护coofor纸巾抽纸原生竹浆纸巾18包</text>
+        </view>
+        <view class='num'>
+          <text class='price'>￥79.90</text>
+          <text class='ordernumbers'>x1</text>
+        </view>
+      </view>
+      <view class='orderNolist'>
+        <view class='orderNo'>
+          <text>订单编号：201804165755818473</text>
+        </view>
+        <view class='total'>
+          <text>总价:￥179.80</text>
+        </view>
+      </view>
+      <view class='btns'>
+        <view class='btnsubmit'>
+          <button class='payment'>已完成</button>
+        </view>
+      </view>
+    </view>
+    <view class='paynull hidden'>
+      <view class='listnullicon'>
+        <image class='nullimg' src='/images/receive_rewards.png'></image>
+      </view>
+      <view class='nulldes'>
+        <text>没有数据哦</text>
+      </view>
+    </view>
+  </view>
+</view>

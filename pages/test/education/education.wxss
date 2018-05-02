@@ -1,0 +1,56 @@
+/* pages/test/education/education.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  background: #EFEFF5;
+}
+.education,.reward{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  box-sizing: border-box;
+}
+.education{
+  padding:10rpx 0;
+}
+.editList{
+  width: 48%;
+  background: #fff;
+  padding-bottom: 20rpx;
+  border-radius: 10rpx;
+  margin: 0 10rpx 10rpx 10rpx;
+  box-sizing: border-box;
+}
+.editList:nth-child(odd){
+  margin-right: 0;
+}
+.editItems{
+  width: 100%;
+  margin-right: 20rpx;
+}
+.editImg{
+ width: 100%; 
+ border-top-left-radius: 10rpx;
+ border-top-right-radius: 10rpx;
+}
+.item{
+  display: block;
+}
+.ceothink{
+  margin: 30rpx;
+}
+.price{
+  font-size: 40rpx;
+  color: #f00;
+  margin-left: 20rpx;
+}
+.reward{
+  margin: 0 28rpx;
+  font-size: 26rpx;
+  color: #707070;
+}
+.footer{
+  text-align: center;
+  margin: 20rpx 0 60rpx 0;
+}

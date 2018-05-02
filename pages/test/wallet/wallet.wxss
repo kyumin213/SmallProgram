@@ -1,0 +1,108 @@
+/* pages/test/wallet/wallet.wxss */
+
+page {
+  background: #efeff5;
+}
+
+.wallet-head {
+  width: 100%;
+  height: 500rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+
+.wallet-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 20rpx;
+}
+
+.wallet-yb {
+  padding-top: 40rpx;
+}
+
+.ybshow {
+  width: 674rpx;
+  height: 354rpx;
+  margin: 0 auto;
+  color: #000;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ybtab {
+  height: 76rpx;
+  line-height: 76rpx;
+  width: 100%;
+  font-size: 28rpx;
+  margin-top: 44rpx;
+}
+
+.yb {
+  display: block;
+  padding-top: 70rpx;
+  font-size: 28rpx;
+}
+
+.ybprice {
+  padding-top: 20rpx;
+  font-size: 70rpx;
+}
+
+.transfer, .exchange {
+  width: 48%;
+}
+
+.recom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.wallet-tableft {
+  padding-bottom: 10rpx;
+  border-bottom: 8rpx solid #fff;
+}
+
+.income-details {
+  background: #fff;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+
+.incomelist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  border-bottom: 2rpx solid #efeff5;
+  margin-left: 26rpx;
+  padding-right: 26rpx;
+}
+
+.details {
+  font-weight: bold;
+  height: 70rpx;
+  border-bottom: 2rpx solid #efeff5;
+  line-height: 70rpx;
+  padding-left: 20rpx;
+}
+
+.extend {
+  color: #676767;
+}
+
+.money-icon {
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 20rpx;
+}

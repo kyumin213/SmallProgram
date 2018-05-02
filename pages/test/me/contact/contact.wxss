@@ -1,0 +1,47 @@
+/* pages/test/me/contact/contact.wxss */
+.serviceicon{
+  width: 100%;
+}
+.customer{
+  width: 100%;
+  height: 260rpx;
+}
+.call{
+  width: 62rpx;
+  height: 43rpx;
+}
+.callus{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 50rpx;
+  border-bottom: 1rpx solid #ccc;
+  height: 80rpx;
+}
+.contact{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 30rpx;
+  margin-left: 40rpx;
+}
+.us{
+  font-size: 26rpx;
+  color: #A5A5A5;
+  margin-left: 20rpx;
+}
+.info{
+  margin: 60rpx;
+  color: #7C7B7B;
+  font-size: 32rpx;
+}
+.address{
+  margin: 60rpx 0 40rpx 0;
+  
+}
+.contacttel{
+margin-bottom: 40rpx;
+}
+.tel,.email{
+  color: #D39111;
+  font-size: 30rpx;
+}

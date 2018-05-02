@@ -1,0 +1,96 @@
+<!--pages/test/me/me.wxml-->
+<view class='me-con'>
+  <view class='head-title'>
+    <view class='head-img'>
+       <image class='head' src="{{userInfo.avatarUrl}}"></image> 
+    </view>
+    <view class='head-nickname'>
+      <view>
+        <text>昵称: {{userInfo.nickName}}</text>
+        <text class='member'>会员</text>
+      </view>
+      <view>
+        <text>编号: 120445</text>
+      </view>
+    </view>
+    <view class='setting'>
+    <text class='sign-out'>退出</text>
+    <!-- <image src='/images/setting_icon_1.png' class='setting-img'></image> -->
+    </view>
+  </view>
+  <view class='my-order'>
+    <text class='orders'>我的订单</text>
+    <view bindtap='viewall'>
+    <text class='viewall'>查看全部订单</text>
+    <text class='jt'></text>
+    </view>
+  </view>
+  <view class='orderlist'>
+    <view class='lists' bindtap='pendpay' id='1'>
+      <image class='listicon' src='/images/wait_pay.png'></image>
+      <text class='wait'>待付款</text>
+    </view>
+    <view class='lists' id='2' bindtap='pendpay'>
+      <image class='listicon' src='/images/wait_delivery.png'></image>
+      <text class='wait'>待发货</text>
+    </view>
+    <view class='lists' id="3" bindtap='pendpay'>
+      <image class='listicon' src='/images/wait_receive.png'></image>
+      <text class='wait'>待收货</text>
+    </view>
+    <view class='lists' id='4' bindtap='pendpay'>
+      <image class='listicon' src='/images/icon_finished.png'></image>
+      <text class='wait'>已完成</text>
+    </view>
+  </view>
+  <view class='mylist'>
+    <view class='account'>
+      <navigator class='myitems' url='account/account' hover-class='none'>
+        <view class='itemicon'>
+          <image class='myicon' src='/images/icon_safe.png'></image>
+        </view>
+        <text>账户安全</text>
+      </navigator>
+    </view>
+    <view class='account'>
+      <navigator class='myitems' url='manageaddress/address' hover-class='none'>
+        <view class='itemicon'>
+          <image class='myicon' src='/images/icon_localtion.png'></image>
+        </view>
+        <text>地址管理</text>
+      </navigator>
+    </view>
+    <view class='account'>
+      <navigator class='myitems' url='rules/rules' hover-class='none'>
+        <view class='itemicon'>
+          <image class='myicon' src='/images/icon_rule.png'></image>
+        </view>
+        <text>奖励规则</text>
+      </navigator>
+    </view>
+    <view class='account'>
+      <navigator class='myitems' url='help/help' hover-class='none'>
+        <view class='itemicon'>
+          <image class='myicon' src='/images/icon_help.png'></image>
+        </view>
+        <text>帮助中心</text>
+      </navigator>
+    </view>
+    <view class='account'>
+      <navigator class='myitems' url='contact/contact' hover-class='none'>
+        <view class='itemicon'>
+          <image class='myicon' src='/images/icon_service.png'></image>
+        </view>
+        <text>联系客服</text>
+      </navigator>
+    </view>
+    <view class='account'>
+      <navigator class='myitems' url='upgrade/upgrade' hover-class='none'>
+        <view class='itemicon'>
+          <image class='myicon' src='/images/icon_apply_partner.png'></image>
+        </view>
+        <text>身份升级</text>
+      </navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,66 @@
+/* pages/test/me/upgrade/upgrade.wxss */
+.identity{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding:0 30rpx 0 20rpx;
+  font-size: 30rpx;
+  height: 90rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.inp{
+  width: 570rpx;
+  text-align: left;
+}
+.phcolor{
+  color: #DBDBDB;
+}
+.txt{
+  color: #000;
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40rpx 22rpx 30rpx 22rpx;
+  border-bottom: 2rpx solid #eee;
+  box-sizing: border-box;
+}
+.cardImg{
+  width: 327rpx;
+  height: 200rpx;
+  margin-bottom: 18rpx;
+  background-size: cover;
+}
+.just{
+  text-align: center;
+  font-size: 30rpx;
+  position: relative;
+}
+.upload{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 174rpx;
+  height: 74rpx;
+  margin-top: -62rpx;
+  margin-left: -87rpx;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 50rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 74rpx;
+  font-size: 30rpx;
+}
+.card .just:nth-child(1){
+  margin-right: 30rpx;
+}
+.submit{
+  margin: 30rpx;
+}
+.btn{
+  background-color: #C6B47A;
+  color: #fff;
+  font-size: 30rpx;
+  padding: 10rpx 0;
+}

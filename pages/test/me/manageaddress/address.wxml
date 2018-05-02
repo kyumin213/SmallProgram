@@ -1,0 +1,45 @@
+<!--pages/test/me/manageaddress/address.wxml-->
+<!--地址管理  -->
+<view class='address'>
+  <!--数据为空时显示  -->
+  <view class='isnull hidden'>
+    <view class='nulladdress'>
+      <image class='nullicon' src='/images/receive_rewards.png'>
+      </image>
+    </view>
+    <view class='nulltext'>
+      <text>没有数据哦</text>
+    </view>
+  </view>
+  <!--地址列表  -->
+  <view class='addresslist'>
+    <view class='addressitem'>
+      <view class='names'>
+        <text>圭贤</text>
+        <text>13510287456</text>
+      </view>
+      <view class='addres'>
+        <text>深圳市南山区西丽大学城2343</text>
+      </view>
+    </view>
+    <view class='setaddress'>
+      <label class='redios'>
+        <radio value='设为默认' class='radi' color='#C6B47A'></radio>
+      </label>
+      <view>
+        <text class='defa'>设为默认</text>
+      </view>
+      <view class='edit'>
+        <image class='addresicon' src='/images/edit_icon.png'></image>
+        <text class='edits' bindtap='editaddress'>编辑</text>
+      </view>
+      <view class='dele'>
+        <image class='addresicon' src='/images/delete_icon.png'></image>
+        <text bindtap='deladdress'>删除</text>
+      </view>
+    </view>
+  </view>
+  <view class='newaddress'>
+    <button class='btn' bindtap='addAddress'>添加新地址</button>
+  </view>
+</view>

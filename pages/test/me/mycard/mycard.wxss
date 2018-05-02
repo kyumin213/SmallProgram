@@ -1,0 +1,80 @@
+/* pages/test/me/mycard/mycard.wxss */
+
+.add {
+  margin-left: 30rpx;
+  font-size: 34rpx;
+  color: #a8a8a8;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+}
+
+
+.addcard {
+  display: inline-block;
+  width: 38rpx;
+  height: 38rpx;
+  background-color: #e22220;
+  border-radius: 8rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 32rpx;
+  margin-right: 20rpx;
+}
+.cardLists{
+   padding-bottom: 10rpx; 
+  border-bottom: 20rpx solid #EFEFF5;
+}
+
+.bankIcon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 30rpx;
+}
+
+.cardItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 150rpx;
+  margin-left: 30rpx;
+  color: #666;
+}
+
+.bankName {
+  display: block;
+  font-size: 32rpx;
+  
+}
+.cardId{
+   font-size: 30rpx; 
+}
+.cardList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 40rpx;
+}
+.deleicon{
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 20rpx;
+}
+.cardedit{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0 40rpx;
+  height: 80rpx;
+}
+.delbtn,.defaultCard{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.defaultCard{
+  justify-content: flex-start;
+  color: #C6B47A;
+}

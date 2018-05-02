@@ -1,0 +1,86 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/test/detail/detail",
+    "pages/test/shoppingcart/shoppingcart",
+   
+    "pages/test/canvas/canvas",
+    "pages/test/me/me",
+    "pages/test/register/register",
+    "pages/test/login/login",
+    "pages/test/forgetpwd/forgetpwd",
+    "pages/test/userprotocol/userprotocol",
+   
+    "pages/test/one/one",
+    "pages/test/education/education",
+    "pages/test/yuanbaoarea/yuanbaoarea",
+    "pages/test/activity/activity",
+    "pages/test/newarrivals/newarrivals",
+    "pages/test/me/manageaddress/address",
+    "pages/test/me/mycard/mycard",
+    "pages/test/me/mycard/deletecard",
+    "pages/test/wallet/wallet",
+    "pages/test/showdetail/showdetail",
+    "pages/test/me/account/account",
+    "pages/test/me/modaddress/modaddress",
+    "pages/test/me/loginpwd/loginpwd",
+    "pages/test/me/newaddress/newaddress",
+    "pages/test/me/addcard/addcard",
+    "pages/test/me/upgrade/upgrade",
+    "pages/test/me/contact/contact",
+    "pages/test/me/help/help",
+    "pages/test/me/rules/rules",
+    "pages/test/me/vieworders/vieworders",
+    "pages/test/appliance/appliance",
+    "pages/index/index",
+    "pages/test/nearby/nearby",
+    "pages/logs/logs",
+    "pages/test/two/two",
+    "pages/test/three/three",
+    "pages/test/yuanbao/yuanbao"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "融益行",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "#e44",
+    "backgroundColor": "#fff",
+    "color": "#000",
+    "selectedColor": "#D9B564",
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "text": "首页",
+        "iconPath": "images/bottom_bar_icon_homepage_normal.png",
+        "selectedIconPath": "images/bottom_bar_icon_homepage_pressed.png"
+      },
+      {
+        "pagePath": "pages/test/nearby/nearby",
+        "text": "附近",
+        "iconPath": "images/bottom_bar_icon_nearby_normal.png",
+        "selectedIconPath": "images/bottom_bar_icon_nearby_pressed.png"
+      },
+      {
+        "pagePath": "pages/test/wallet/wallet",
+        "text": "钱包",
+        "iconPath": "images/bottom_bar_icon_wallet_normal.png",
+        "selectedIconPath": "images/bottom_bar_icon_wallet_pressed.png"
+      },
+      {
+        "pagePath": "pages/test/shoppingcart/shoppingcart",
+        "text": "购物车",
+        "iconPath": "images/bottom_bar_icon_shopping_cart_normal.png",
+        "selectedIconPath": "images/bottom_bar_icon_shopping_cart_pressed.png"
+      },
+      {
+        "pagePath": "pages/test/me/me",
+        "text": "我的",
+        "iconPath": "images/bottom_bar_icon_mine_normal.png",
+        "selectedIconPath": "images/bottom_bar_icon_mine_pressed.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+/* pages/test/activity/activity.wxss */
+page{
+  background: #EFEFF5;
+}
+.active-head{
+  width: 100%;
+  height: 480rpx;
+}
+.active-img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin: 4rpx;
+}
+.activi-con{
+  width: 100%;
+  height: 100%;
+   margin-top: 16rpx; 
+}
+.activiList{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.activeItem{
+  width: 48%;
+  background: #fff;
+  margin: 0 10rpx 10rpx 10rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+.activeItem:nth-child(odd){
+  margin-right: 0;
+}
+.activiImgs{
+  width: 100%;
+  height: 300rpx;
+  box-sizing: border-box;
+  padding: 5rpx;
+  
+}
+
+.activi-img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+}
+.des{
+  display: inline-block;
+  font-size: 26rpx;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  padding: 20rpx 16rpx 0 20rpx;
+}
+.price{
+  display: inline-block;
+  color: #f00;
+  font-size: 40rpx;
+  padding: 5rpx  18rpx 0 18rpx;
+}
+.sold{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26rpx;
+  padding:10rpx 18rpx;
+  color: #707070;
+}

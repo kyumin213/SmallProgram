@@ -1,0 +1,20 @@
+var navbar=[{
+name:"首页",
+  url:"/pages/test/test"
+},{
+  name:"一倍专区",
+  url:"/pages/test/one/one"
+},{
+  name:"二倍专区",
+  url:"/pages/test/two/two"
+},{
+  name:"三倍专区",
+  url:"/pages/test/three/three"
+},{
+  name:"元宝专区",
+  url:"/pages/test/yuanbao/yuanbao"
+}
+]
+module.exports={
+  navbar:navbar
+}

@@ -1,0 +1,44 @@
+<!--pages/test/activity/activity.wxml-->
+<!--专享活动  -->
+<view>
+  <view class='active-head'>
+    <image class='active-img' src='/images/new_people_area.png'></image>
+  </view>
+  <view class='activi-con'>
+    <view class='activiList'>
+      <view class='activeItem' bindtap='detail'>
+        <view class='activiImgs'>
+          <image mode='widthFix' src='/images/print.jpg' class='activi-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+      <view class='activeItem' bindtap='detail'>
+        <view class='activiImgs'>
+          <image src='/images/print.jpg' class='activi-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+            <view class='activeItem' bindtap='detail'>
+        <view class='activiImgs'>
+          <image src='/images/print.jpg' class='activi-img'></image>
+        </view>
+        <text class='des'>wellesfamily威尔士家族2015c赤红朱霞红葡萄酒澳洲进口</text>
+        <text class='price'>358.00元宝</text>
+        <view class='sold'>
+          <text>奖励:358元宝</text>
+          <text>已售2</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

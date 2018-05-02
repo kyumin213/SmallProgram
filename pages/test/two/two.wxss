@@ -1,0 +1,6 @@
+/* pages/two/two.wxss */
+@import "../tab-tp/tab.wxss";
+/* @import "../one/one.wxss"; */
+.two-show{
+  width: 100%;
+}

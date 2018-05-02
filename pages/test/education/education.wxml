@@ -1,0 +1,81 @@
+<!--pages/test/education/education.wxml-->
+<!--教育课程  -->
+<view class='con'>
+  <view class='education'>
+    <view class='editList fz-28'>
+      <view class='editItems'>
+        <image src='/images/new_people_area.png' class='editImg'>
+        </image>
+      </view>
+      <view>
+        <text class='item ceothink'>总裁思维</text>
+        <text class='item price'>￥20000.00</text>
+      </view>
+      <view class='reward'>
+        <text>奖励:70000元宝</text>
+        <text>已售375</text>
+      </view>
+    </view>
+    <view class='editList fz-28'>
+      <view class='editItems'>
+        <image src='/images/new_people_area.png' class='editImg'>
+        </image>
+      </view>
+      <view>
+        <text class='item ceothink'>总裁思维</text>
+        <text class='item price'>￥20000.00</text>
+      </view>
+      <view class='reward'>
+        <text>奖励:70000元宝</text>
+        <text>已售375</text>
+      </view>
+    </view>
+    <view class='editList fz-28'>
+      <view class='editItems'>
+        <image src='/images/new_people_area.png' class='editImg'>
+        </image>
+      </view>
+      <view>
+        <text class='item ceothink'>总裁思维</text>
+        <text class='item price'>￥20000.00</text>
+      </view>
+      <view class='reward'>
+        <text>奖励:70000元宝</text>
+        <text>已售375</text>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='education'>
+    <view class='editList fz-28'>
+      <view class='editItems'>
+        <image src='/images/new_people_area.png' class='editImg'>
+        </image>
+      </view>
+      <view>
+        <text class='item ceothink'>总裁思维</text>
+        <text class='item price'>￥20000.00</text>
+      </view>
+      <view class='reward'>
+        <text>奖励:70000元宝</text>
+        <text>已售375</text>
+      </view>
+    </view>
+    <view class='editList fz-28'>
+      <view class='editItems'>
+        <image src='/images/new_people_area.png' class='editImg'>
+        </image>
+      </view>
+      <view>
+        <text class='item ceothink'>总裁思维</text>
+        <text class='item price'>￥20000.00</text>
+      </view>
+      <view class='reward'>
+        <text>奖励:70000元宝</text>
+        <text>已售375</text>
+      </view>
+    </view>
+  </view> -->
+  <view class='footer fz-28'>
+    <text>没有更多数据</text>
+  </view>
+</view>

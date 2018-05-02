@@ -1,0 +1,30 @@
+/* pages/test/login/login.wxss */
+@import "../me/loginpwd/loginpwd.wxss";
+.login{
+  background-color: #2D2B29;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.regis{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 20rpx 40rpx;
+  color: #fff;
+  font-size: 30rpx;
+}
+.logs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
+}
+.login-icon{
+  width: 208rpx;
+  height: 260rpx;
+}

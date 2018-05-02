@@ -1,0 +1,22 @@
+<!--pages/test/showdetail/showdetail.wxml-->
+<!--元宝记录  -->
+<view class='flex fz-28 items'>
+  <view>
+    <text>推广获得</text>
+    <text class='moneys ids'>ID:12345</text>
+  </view>
+    <view>
+    <text class='times'>2018-2-16 11:23</text>
+    <text class='moneys on'>+100</text>
+  </view>
+</view>
+<view class='flex fz-28 items'>
+  <view>
+    <text>推广获得</text>
+    <text class='moneys ids'>ID:12345</text>
+  </view>
+    <view>
+    <text class='times'>2018-2-16 11:23</text>
+    <text class='moneys on'>+100</text>
+  </view>
+</view>

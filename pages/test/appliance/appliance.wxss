@@ -1,0 +1,43 @@
+@import "../one/one.wxss";
+
+.appNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.items {
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.pri {
+  position: relative;
+}
+
+.pri-top {
+  position: relative;
+  right: 0;
+  top: -28rpx;
+  left: 14rpx;
+  width: 0;
+  height: 0;
+  border-left: 9rpx solid transparent;
+  border-right: 9rpx solid transparent;
+  border-bottom: 8rpx solid #000;
+}
+
+.pri-top::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 56rpx;
+  left: -6rpx;
+  right: 0;
+  border-left: 9rpx solid transparent;
+  border-right: 9rpx solid transparent;
+  border-top: 8rpx solid #000;
+}

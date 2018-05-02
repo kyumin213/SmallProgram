@@ -1,0 +1,27 @@
+<!--pages/test/me/mycard/deletecard.wxml-->
+<!--解绑银行卡  -->
+<view class='fz-28'>
+  <view class='info'>
+    <text>持卡人姓名</text>
+    <text>圭贤</text>
+  </view>
+  <view class='info bor-bottom'>
+    <text>银行卡号</text>
+    <text>6228*********5414</text>
+  </view>
+  <view class='info'>
+    <text>开户银行区域</text>
+    <text>深圳市南山区</text>
+  </view>
+  <view class='info'>
+    <text>开户银行</text>
+    <text>中国农业银行</text>
+  </view>
+  <view class='info'>
+    <text>开户行支行</text>
+    <text>西丽支行</text>
+  </view>
+  <view class='delbtn'>
+    <button class='btn'>解绑</button>
+  </view>
+</view>

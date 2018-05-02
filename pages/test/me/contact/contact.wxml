@@ -1,0 +1,25 @@
+<!--pages/test/me/contact/contact.wxml-->
+<!--联系客服  -->
+<view>
+  <view class='serviceicon'>
+    <image class='customer' src='/images/img_service.png'></image>
+  </view>
+  <view class='callus'>
+    <image class='call' src='/images/icon_call.png'></image>
+    <text class='contact'>联系我们</text>
+    <text class='us'>Contact us</text>
+  </view>
+  <view class='info'>
+    <view class='address'>
+      <text>公司地址：广东省深圳市龙岗区坂田街道梅林大道与雅宝路交汇处 星河World B座2002</text>
+    </view>
+    <view class='contacttel'>
+      客服电话：
+      <text class='tel'>0755-28210820</text>
+    </view>
+    <view class='contactemail'>
+      客服邮箱：
+      <text class='email'>ryx@rongyixing.com.cn</text>
+    </view>
+  </view>
+</view>

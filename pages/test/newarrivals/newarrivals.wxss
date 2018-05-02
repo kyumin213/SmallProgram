@@ -1,0 +1,73 @@
+/* pages/test/newarrivals/newarrivals.wxss */
+
+.arrivals-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70rpx;
+  border-bottom: 2rpx solid #efeff5;
+}
+
+.arrivalsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #eee;
+  padding: 10rpx 0;
+}
+
+.arrivalsItems {
+  background: #fff;
+  width: 48%;
+  margin: 0 10rpx 10rpx 10rpx;
+  box-sizing: border-box;
+}
+
+.arrivalsItems:nth-child(odd) {
+  margin-right: 0;
+}
+
+.arrivalsImgs {
+  width: 100%;
+  height: 350rpx;
+}
+
+.arrivals-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.des {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  padding: 18rpx 18rpx 0 18rpx;
+  font-size: 26rpx;
+  box-sizing: border-box;
+}
+
+.price {
+  display: block;
+  margin: 0 18rpx;
+  font-size: 42rpx;
+  color: #f00;
+}
+
+.sold {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 18rpx 18rpx 18rpx;
+  color: #707070;
+  font-size: 26rpx;
+}
+
+.sold-right {
+  justify-content: flex-end;
+}

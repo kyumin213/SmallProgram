@@ -1,0 +1,46 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+button::after{
+  border: none;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.on{
+  color: #C6B47A;
+}
+.fz-28{
+  font-size: 28rpx;
+}
+.jt{
+  display: inline-block;
+  width: 18rpx;
+  height: 18rpx;
+  border-top: 4rpx solid #D2D2D2;
+  border-right: 4rpx solid #D2D2D2;
+  transform: rotate(45deg);
+  margin-left: 20rpx;
+}
+.mr-30{
+  margin-right: 30rpx;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.radi{
+  transform: scale(.9);
+  margin-right: 20rpx;
+}

@@ -1,0 +1,25 @@
+/* pages/test/me/mycard/deletecard.wxss */
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 40rpx;
+  /* height: 90rpx; */
+  border-bottom: 2rpx solid #EFEFF5;
+}
+.bor-bottom{
+  border-bottom: 20rpx solid #EFEFF5;
+}
+
+.delbtn{
+  width: 90%;
+  margin: 80rpx auto;
+ 
+}
+.btn{
+  font-size: 30rpx;
+  background: #C6B47A;
+  color: #fff;
+  height: 90rpx;
+  line-height: 90rpx;
+}

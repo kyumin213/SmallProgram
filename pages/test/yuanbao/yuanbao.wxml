@@ -1,0 +1,38 @@
+<!--pages/yuanbao/yuanbao.wxml-->
+<import src="../tab-tp/tab.wxml" />
+<template name="yuanbao">
+  <view class='yb'>
+    <view class='yuanbao-show'>
+      <image class='img-con' src='/images/sycee_area.png' mode='widthFix'></image>
+    </view>
+    <view class='lists'>
+      <view class='list-item'>
+        <image class='list-imgs' src='/images/print.jpg'></image>
+        <text class='item des'>爱普生Epson--LQ-630Kll</text>
+        <text class='item price'>1916.<text class='priceend'>00</text></text>
+        <view class='sold'>
+          <text class='jl'>奖励1916元宝</text>
+          <text class='ys'>500已售</text>
+        </view>
+      </view>
+      <view class='list-item'>
+        <image class='list-imgs' src='/images/print.jpg'></image>
+        <text class='item des'>爱普生Epson--LQ-630Kll</text>
+        <text class='item price'>1916.<text class='priceend'>00</text></text>
+        <view class='sold'>
+          <text class='jl'>奖励1916元宝</text>
+          <text class='ys'>500已售</text>
+        </view>
+      </view>
+      <view class='list-item'>
+        <image class='list-imgs' src='/images/print.jpg'></image>
+        <text class='item des'>爱普生Epson--LQ-630Kll</text>
+        <text class='item price'>1916.<text class='priceend'>00</text></text>
+        <view class='sold'>
+          <text class='jl'>奖励1916元宝</text>
+          <text class='ys'>500已售</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

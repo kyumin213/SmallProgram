@@ -1,0 +1,40 @@
+<!--pages/test/register/register.wxml-->
+<view class='regiter'>
+  <form bindsubmit="formSubmit">
+    <view class='oldpwd'>
+      <image class='mimaicon' src='/images/icon_mobile.png'></image>
+      <input name='phone' placeholder-class='phcolor' type='number' maxlength='11' bindblur="inputPhoneNum" class='pwdinp' placeholder='请输入手机号码'></input>
+    </view>
+    <view class='againpwd'>
+      <image class='mimaicon' src='/images/icon_msg.png'></image>
+      <input name='code' placeholder-class='phcolor' maxlength='6'  class='pwdinp' placeholder='请输入验证码'></input>
+      <button class='getcode' data-id="2" bindtap="getCode" disabled="{{smsCodeDisabled}}" style="background-color:{{getSmsCodeBtnColor}}">{{time}}</button>
+    </view>
+    <view class='oldpwd'>
+      <image class='mimaicon' src='/images/icon_pw.png'></image>
+      <input name='pwd' placeholder-class='phcolor' password='true' bindblur='pwd' class='pwdinp' placeholder='请输入密码'></input>
+    </view>
+    <view class='newpwd'>
+      <image class='mimaicon' src='/images/icon_pw.png'></image>
+      <input name='againpwd' placeholder-class='phcolor' password='true' bindblur='confirmPwd' class='pwdinp' placeholder='请再次输入密码'></input>
+    </view>
+    <view class='newpwd'>
+      <image class='mimaicon' src='/images/icon_referee.png'></image>
+      <input name='tel' placeholder-class='phcolor' class='pwdinp' maxlength='11' bindblur="inputPhoneNum" placeholder='请输入推荐人手机号'></input>
+    </view>
+    <view class='remind fz-28'>推荐人一经填写无法更改</view>
+    <view class='fz-28 agree'>
+      <view bindtap='checked' class='checked'>
+        <icon wx:if="{{checked}}" type="success" color="#C6B47A" />
+        <icon wx:else type="circle" />
+      </view>
+      <view>
+        <text class='agree-use'>同意使用融益行</text>
+        <text bindtap='userprotocol'>《用户协议》</text>
+      </view>
+    </view>
+    <view class='submitbtn'>
+      <button formType="submit" style="background-color:{{registBtnBgBgColor}}" class='sub'>{{registBtnTxt}}</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,39 @@
+<!--pages/test/me/mycard/mycard.wxml-->
+<!--我的卡片  -->
+<view>
+  <view class='cardLists'>
+    <view class='cardList'>
+      <view class='cardItem'>
+        <view>
+          <image class='bankIcon' src='/images/bank_card_icon.png'></image>
+        </view>
+        <view>
+          <text class='bankName'>中国农业银行</text>
+          <text class='cardId'>622848**********2324</text>
+        </view>
+      </view>
+      <view>
+        <text class='jt'></text>
+      </view>
+    </view>
+    <view class='cardedit fz-28'>
+      <view class='defaultCard'>
+        <radio class='radi' color='#C6B47A'></radio>
+        <text>默认银行卡</text>
+      </view>
+      <view class='delbtn' bindtap='deletecard'>
+        <image class='deleicon' src='/images/delete_icon.png'></image>
+        <text>解绑</text>
+      </view>
+    </view>
+  </view>
+  <view class='add flex'>
+    <view bindtap='addcards'>
+      <span class='addcard'>+</span>
+      <text class='card'>添加银行卡</text>
+    </view>
+    <view>
+    <text class='jt'></text>
+    </view>
+  </view>
+</view>

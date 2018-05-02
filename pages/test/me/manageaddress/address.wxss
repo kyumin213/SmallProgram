@@ -1,0 +1,85 @@
+/* pages/test/me/manageaddress/address.wxss */
+
+.isnull {
+  margin-top: 150rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.address {
+  border-top: 20rpx solid #efeff5;
+}
+
+.nulladdress {
+  text-align: center;
+}
+
+.nullicon {
+  width: 300rpx;
+  height: 255rpx;
+}
+
+.nulltext {
+  color: #a3a3a3;
+}
+
+.newaddress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.btn {
+  background-color: #c6b47a;
+  color: #fff;
+  font-size: 32rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.addressitem {
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  height: 120rpx;
+  line-height: 54rpx;
+  border-bottom: 2rpx solid #EFEFF5;
+}
+
+.names {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16rpx;
+}
+
+.addresicon {
+  width: 34rpx;
+  height: 34rpx;
+  margin-bottom: -4rpx;
+  margin-right: 16rpx;
+}
+
+.setaddress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28rpx;
+  padding: 20rpx;
+  border-bottom: 20rpx solid #EFEFF5;
+}
+ 
+.defa{
+  display: inline-block;
+  margin-bottom: -4rpx;
+  margin-left: -160rpx;
+  color: #C6B47A;
+}
+.edits{
+  color:#C6B47A;
+}

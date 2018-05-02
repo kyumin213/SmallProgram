@@ -1,0 +1,35 @@
+<!--pages/test/me/addcard/addcard.wxml-->
+<import src='../../../region/region.wxml' />
+<!--添加银行卡  -->
+<view class='addcards'>
+  <form bindsubmit="formSubmit">
+    <view class='cardholder'>
+      <text>持卡人姓名</text>
+      <input name="cardname" placeholder-class='phcolor' class='holdername' placeholder='请输入持卡人姓名' />
+    </view>
+    <view class='cardholder'>
+      <text>银行卡号</text>
+      <input name="cardId" placeholder-class='phcolor' class='holdername' maxlength='19' placeholder='请输入银行卡号' />
+    </view>
+    <view class='account' bindtap="translate">
+      <view class='cardholder'>
+        <text>开户银行区域</text>
+         <input  name="cardarea" placeholder-class='phcolor' class='hidden' placeholder="请选择"  /> 
+         <view>{{province}} {{city}} {{county}}</view> 
+        <template is="areaData" data="{{...item}}" />
+      </view>
+    </view>
+    <view class='cardholder'>
+      <text>开户行</text>
+      <input name="bank" placeholder-class='phcolor' class='holdername' placeholder='(如：中国建设银行)'></input>
+    </view>
+    <view class='cardholder'>
+      <text>开户行支行</text>
+      <input name="branch" placeholder-class='phcolor' class='holdername' placeholder='(如：建设银行深圳福田支行)'></input>
+    </view>
+    <view class='addbtn'>
+      <button formType="submit" class='submitbtn'>确认添加</button>
+    </view>
+  </form>
+  <view class='warn'>请确认您添加的银行卡信息是否正确，否则将影响金元宝回购!</view>
+</view>

@@ -1,0 +1,42 @@
+/* pages/test/me/loginpwd/loginpwd.wxss */
+.modpwd{
+  background-color: #2D2B29;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.oldpwd,.newpwd,.againpwd{
+  margin-top: 30rpx;
+  position: relative;
+}
+
+.mimaicon{
+  position: absolute;
+  width: 82rpx;
+  height: 82rpx;
+  left: 60rpx;
+  top: 50%;
+  margin-top: -41rpx;
+}
+.pwdinp{
+  font-size: 28rpx;
+  background-color: #6E6E6D;
+  color: #FFF;
+  height: 90rpx;
+  margin: 0 30rpx;
+  border-radius: 10rpx;
+  padding-left: 130rpx;
+}
+.submitbtn{
+  margin: 50rpx 30rpx;
+}
+.sub{
+  background-color: #C6B47A;
+  color: #fff;
+  font-size: 34rpx;
+}
+.phcolor{
+  color: #fff;
+}

@@ -1,0 +1,12 @@
+<!-- <template>
+  <view class='search-icon'>
+  <image class='sear-icon' src='/images/category_icon_2.png'></image>
+  <input placeholder='搜索商品' class='sear-inp'></input>
+  <text class='message'>...</text>
+  </view> 
+</template> -->
+<template name="nav">
+  <view class='nav-container'>
+    <navigator wx:for="{{navbar}}" data-idx="{{index}}" open-type="redirect" url="{{item.url}}" class="function-text{{currentTab==index? 'present':''}} tabs">{{item.name}}</navigator>
+  </view>
+</template>

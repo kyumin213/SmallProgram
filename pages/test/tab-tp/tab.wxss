@@ -1,0 +1,102 @@
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 64rpx;
+  padding: 0;
+  background-color: #fff;
+}
+.tabs{
+  margin-right: 40rpx;
+  font-size: 25rpx;
+  padding: 13rpx 8rpx;
+  border-bottom: 6rpx solid #fff; 
+}
+.function-text{
+  font-size: 25rpx;
+  color: #000;
+ 
+}
+.present{
+  border-bottom: 4rpx solid #D9B564;
+}
+  .function-textpresent{
+  font-size: 25rpx;
+  color: #D9B564;
+  border-bottom: 6rpx solid #D9B564;
+} 
+
+
+.tabs:last-child{
+  margin-right: 0;
+}
+.search-icon{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10rpx;
+}
+.sear-icon{
+  width: 44rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+}
+.sear-inp{
+  width: 500rpx;
+  height: 55rpx;
+  border-radius: 10rpx;
+  margin-left: 35rpx;
+  font-size: 25rpx;
+  padding-left: 65rpx;
+  position: relative;
+  background-color: #F3F3F3;
+  color: #A6A6A6;
+}
+.search-icon .sear-inp::before{
+  content: "";
+  position: absolute;
+  left: 20rpx;
+  top: 17rpx;
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 100%;
+  border: 5rpx solid #ccc;
+}
+.search-icon .sear-inp::after{
+  content: "";
+  position: absolute;
+  width: 12rpx;
+  height: 5rpx;
+  background-color: #ccc;
+  top: 38rpx;
+  left: 38rpx;
+  transform: rotate(40deg)
+}
+.search-icon .message{
+  width: 30rpx;
+  height: 24rpx;
+  border: 4rpx solid #333;
+  text-align: center;
+  line-height: 8rpx;
+  margin: 0 30rpx;
+  border-radius: 5rpx;
+  position: relative;
+}
+.search-icon .message::after{
+  content: "";
+  width: 8rpx;
+  position: absolute;
+  top: 22rpx;
+  left: 8rpx;
+  z-index: 999;
+  height:8rpx;
+  border-left: 4rpx solid #333;
+  border-bottom: 4rpx solid #333;
+  transform: rotate(-45deg);
+  background: #fff;
+}
+.ni{
+  color: #f00;
+}

@@ -1,0 +1,29 @@
+<!--pages/test/me/newaddress/newaddress.wxml-->
+<import src='../../../region/region.wxml' />
+<!--添加地址  -->
+<view>
+  <form bindsubmit='formSubmit'>
+    <view class='managelist'>
+      <view class='items'>
+        <text class='txt'>收货人</text>
+        <input name='consignee' class='inp' placeholder-class='phcolor' placeholder='请填写收货人'></input>
+      </view>
+      <view class='items'>
+        <text class='txt'>联系电话</text>
+        <input name='telenumber' class='inp' type='number' placeholder-class='phcolor' placeholder='请填写联系电话'></input>
+      </view>
+      <view class='items area' bindtap="translate">
+        <text class='txt'>所在地区</text>
+        <input name='area' class='inparea hidden' placeholder='请选择所在地区'></input>
+        <template is="areaData" data="{{...item}}" />
+        <view>{{province}} {{city}} {{county}}</view>
+      </view>
+      <view class='detai'>
+        <textarea class='detaiinp' placeholder='请填写详细地址' value='{{detailaddress}}'></textarea>
+      </view>
+      <view class='pre'>
+        <button form-type='submit' class='prebtn'>保存地址</button>
+      </view>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/test/forgetpwd/forgetpwd.wxml-->
+<!--忘记密码  -->
+<view class='regiter'>
+  <form bindsubmit="formSubmit">
+    <view class='oldpwd'>
+      <image class='mimaicon' src='/images/icon_mobile.png'></image>
+      <input name='phone' placeholder-class='phcolor' type='number' maxlength='11' bindblur="inputPhoneNum" class='pwdinp' placeholder='请输入手机号码'></input>
+    </view>
+    <view class='againpwd'>
+      <image class='mimaicon' src='/images/icon_msg.png'></image>
+      <input name='code' placeholder-class='phcolor' maxlength='6'  class='pwdinp' placeholder='请输入验证码'></input>
+      <button class='getcode' data-id="2" bindtap="getCode" disabled="{{smsCodeDisabled}}" style="background-color:{{getSmsCodeBtnColor}}">{{time}}</button>
+    </view>
+    <view class='oldpwd'>
+      <image class='mimaicon' src='/images/icon_pw.png'></image>
+      <input name='pwd' placeholder-class='phcolor' password='true' bindblur='pwd' class='pwdinp' placeholder='请输入密码'></input>
+    </view>
+    <view class='newpwd'>
+      <image class='mimaicon' src='/images/icon_pw.png'></image>
+      <input name='againpwd' placeholder-class='phcolor' password='true' bindblur='confirmPwd' class='pwdinp' placeholder='请再次输入密码'></input>
+    </view>
+    <view class='submitbtn'>
+      <button formType="submit" class='sub'>确定</button>
+    </view>
+  </form>
+</view>

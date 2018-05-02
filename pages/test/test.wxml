@@ -1,0 +1,103 @@
+<import src="tab-tp/tab.wxml" />
+<import src="one/one.wxml" />
+<import src="two/two.wxml" />
+<import src="three/three.wxml" />
+<import src="yuanbao/yuanbao.wxml" />
+<view class='cont'>
+  <view class='top-tabs'>
+    <view class='search-icon'>
+      <!-- <image class='sear-icon' src='/images/category_icon_2.png'></image> -->
+      <input placeholder='搜索商品' class='sear-inp'></input>
+      <!-- <text class='message'>...</text> -->
+    </view>
+    <view class='info'>
+      <view class='nav-container'>
+        <view class="{{index?'present':''}} tabs" bindtap='index'>首页</view>
+        <view class="{{one?'present':''}} tabs" bindtap="one">一倍专区</view>
+        <view class="{{two?'present':''}} tabs" bindtap="two">二倍专区</view>
+        <view class="{{three?'present':''}} tabs" bindtap="three">三倍专区</view>
+        <view class="{{yuanbao?'present':''}} tabs" bindtap="yuanbao">元宝专区</view>
+      </view>
+    </view>
+  </view>
+  <view class="{{index?'show':'hidden'}}">
+    <view class='centshow'>
+      <swiper class="swiper" indicator-dots="{{indicatorDots}}" indicator-color='#ccc' indicator-active-color='#f00' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image mode='widthFix' class='silde-img' src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class='imgshow'>
+      <view class='img-left' bindtap='yuanbaoarea'>
+        <image class='img2' src='/images/home_first_sycee.png'></image>
+      </view>
+      <view class='img-right'>
+        <image class='img3' src='/images/home_first_course.png' bindtap='education'></image>
+        <image class='img4' src='/images/home_first_lucky.png' bindtap='luckyDraw'></image>
+      </view>
+    </view>
+    <view class='showimg2' bindtap='activity'>
+      <image src='/images/new_people_area.png' class='img5' mode='widthFix'></image>
+    </view>
+    <view class='view-lists'>
+      <view class='goodsLists'>
+        <view class='show-goodsList' bindtap='detail'>
+          <image mode='widthFix' src='/images/new_people_area.png' class='view-img'></image>
+        </view>
+      </view>
+    </view>
+    <view class='new-imgs' bindtap='newarrivals'>
+      <image src='/images/icon_new_recommend.png' class='new-reco'>
+      </image>
+    </view>
+    <view class='show-newgoods'>
+      <view class='new-lists'>
+        <view class='lists-item' bindtap='detail'>
+          <view class='newImgs'>
+            <image class='item-imgs' src='/images/print.jpg'></image>
+          </view>
+          <text class='item item-des'>爱普生Epson--LQ-630Kll爱普生Epson--LQ-630Kl爱普生Epson</text>
+          <text class='item item-price'>1916.00元宝</text>
+          <view class='item-sold'>
+            <text class='ys'>已售500</text>
+          </view>
+        </view>
+        <view class='lists-item' bindtap='detail'>
+          <view class='newImgs'>
+            <image mode='widthFix' class='item-imgs' src='/images/print.jpg'></image>
+          </view>
+          <text class='item item-des'>爱普生Epson--LQ-630Kll爱普生Epson--LQ-630Kl爱普生Epson</text>
+          <text class='item item-price'>1916.00元宝</text>
+          <view class='item-sold'>
+            <text class='ys'>已售500</text>
+          </view>
+        </view>
+        <view class='lists-item' bindtap='detail'>
+          <view class='newImgs'>
+            <image class='item-imgs' src='/images/print.jpg'></image>
+          </view>
+          <text class='item item-des'>爱普生Epson--LQ-630Kll爱普生Epson--LQ-630Kl爱普生Epson</text>
+          <text class='item item-price'>1916.00元宝</text>
+          <view class='item-sold'>
+            <text class='ys'>已售500</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="{{one?'show':'hidden'}}">
+    <template is="one"></template>
+  </view>
+  <view class="{{two?'show':'hidden'}}">
+    <template is="two"></template>
+  </view>
+  <view class="{{three?'show':'hidden'}}">
+    <template is="three"></template>
+  </view>
+  <view class="{{yuanbao?'show':'hidden'}}">
+    <template is="yuanbao"></template>
+  </view>
+</view>

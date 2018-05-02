@@ -1,0 +1,50 @@
+<!--pages/test/canvas/canvas.wxml-->
+<view class="wrapper">
+  <view class="header">
+    <image class='head-img' src='/images/top.png'></image>
+  </view>
+  <view class="main">
+    <view class="canvas-container">
+      <view animation="{{animationData}}" class="canvas-content">
+        <canvas style="width: 600rpx; height: 600rpx;" class="canvas-element" canvas-id="lotteryCanvas"></canvas>
+
+        <view class="canvas-line">
+          <view class="canvas-litem" wx:for="{{awardsList}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
+        </view>
+        <view class="canvas-list">
+          <view class="canvas-item" wx:for="{{awardsList}}" wx:key="unique">
+            <view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.award}}</view>
+          </view>
+        </view>
+      </view>
+      <view bindtap="getLottery" class="canvas-btn">
+        <image class='btn-icon' src='/images/node.png'></image>
+      </view>
+    </view>
+    <view class="main-container">
+      <image src='/images/buttom.png' class='bg-img'></image>
+      <view class="main-container-btn">
+        <text>每名用户每天仅有3次抽奖机会</text>
+        <text>多重大礼等你来拿</text>
+      </view>
+      <swiper class="win" vertical="true" autoplay="true" circular="true" interval="2000">
+        <block wx:for="{{wins}}">
+            <swiper-item>
+              <view class='swiper-item'>
+              <text>{{item.tel}}</text>
+              <text class='yb'>{{item.jp}}</text>
+              <text>{{item.times}}</text>
+              </view>
+            </swiper-item>
+        </block>
+      </swiper>
+      <view class='result'>
+        <text class='items'>活动规则：</text>
+        <text class='items'>1.每个用户每天有3次抽奖机会，抽奖机会每天在24点重置，请于活动期间内抽奖</text>
+        <text class='items'>2.抽中的奖品可以通过"抽奖记录"查看</text>
+        <text class='items'>3.抽中商品的用户，我们会在15个工作日内派发奖品，奖品一经送出概不退换</text>
+        <text class='items'>4.活动最终解释权归融益行所有</text>
+      </view>      
+    </view>
+  </view>
+</view>

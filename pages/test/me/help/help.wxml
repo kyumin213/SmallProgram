@@ -1,0 +1,18 @@
+<!--pages/test/me/help/help.wxml-->
+<!--帮助中心  -->
+<view>
+  <view class='help'>
+    <text class='questions'>Q1 金元宝回购什么时候到账？</text>
+    <text class='answers'>每次回购需满200且为100的整数倍；每次回购手续费及税费为6%；到账时间为T+1。</text>
+    <text class='questions'>Q2 关于金元宝</text>
+    <text class='answers'>金元宝是由元宝通过每日指数释放所得；金元宝可回购。</text>
+    <text class='questions'>Q3 关于推广奖励规则</text>
+    <text class='answers'>推广奖励是由分享收益而来；回购方式等同于金元宝回购。</text>
+    <text class='questions'>Q4 关于元宝的来源</text>
+    <text class='answers'>通过融益行平台消费可获得相应倍数的元宝奖励，满300个元宝方可释放金元宝；推广会员也可获得元宝奖励。</text>
+    <text class='questions'>Q5 关于元宝的用途</text>
+    <text class='answers'>在融益行商城使用元宝换购商品；元宝按照每日指数释放成金元宝。</text>
+    <text class='questions'>Q6 关于元宝分配时间</text>
+    <text class='answers'>订单成功支付后即时分配待收元宝，确认收货后激活元宝。</text>
+  </view>
+</view>

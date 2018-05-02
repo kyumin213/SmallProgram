@@ -1,0 +1,17 @@
+/* pages/test/me/help/help.wxss */
+.help{
+  
+}
+text{
+  display: block;
+  padding: 18rpx 30rpx;
+}
+.answers{
+  color: #818181;
+  font-size: 28rpx;
+}
+.questions{
+  /* font-family: '黑体'; */
+  font-weight: 600;
+  font-size: 30rpx;
+}

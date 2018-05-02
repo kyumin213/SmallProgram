@@ -1,0 +1,21 @@
+/* pages/test/me/account/account.wxss */
+.phoneNumber{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  height: 80rpx;
+  border-bottom: 16rpx solid #EFEFF5;
+}
+.pwdlist{
+  padding-left: 40rpx;
+}
+.pwditems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #eee;
+  padding-right: 40rpx;
+}

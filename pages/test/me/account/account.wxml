@@ -1,0 +1,22 @@
+<!--pages/test/me/account/account.wxml-->
+<!--账户安全  -->
+<view class='account'>
+  <view class='phoneNumber fz-28'>
+    <text>手机号</text>
+    <text class='mr-30'>13510287137</text>
+  </view>
+  <view class='pwdlist fz-28'>
+    <view class='pwditems' bindtap='loginpwd'>
+        <text>登陆密码</text>
+      <text class='jt'></text>
+    </view>
+    <view class='pwditems fz-28'>
+        <text>支付密码</text>
+        <text class='jt'></text>
+    </view>
+    <view class='pwditems fz-28' bindtap='mycard'>
+        <text>我的银行卡</text>
+        <text class='jt'></text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+/* pages/test/me/addcard/addcard.wxss */
+@import '../../../region/region.wxss';
+.addcards{
+  width: 100%;
+  height: 100%;
+  background-color: #EFEFF5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.cardholder{
+  display: flex;
+  font-size: 28rpx;
+   align-items: center; 
+  justify-content: space-between;
+  height: 100rpx;
+  border-bottom: 2rpx solid #eee;
+  padding: 0 30rpx;
+  background: #fff;
+}
+.holdername{
+  text-align: right;
+  width: 500rpx;
+}
+.phcolor{
+  color: #DBDBDB;
+}
+.account{
+  margin-top: 20rpx;
+}
+.addbtn{
+  margin-top:60rpx;
+}
+.submitbtn{
+  color: #fff;
+  background-color: #C6B47A;
+  margin: 0 40rpx;
+  font-size: 32rpx;
+}
+.warn{
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}

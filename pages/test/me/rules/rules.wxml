@@ -1,0 +1,5 @@
+<!--pages/test/me/rules/rules.wxml-->
+<!--奖励规则  -->
+<view class='rules'>
+  <image src='/images/img_reward_rules.png'></image>
+</view>

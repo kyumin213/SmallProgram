@@ -1,0 +1,17 @@
+/* pages/test/showdetail/showdetail.wxss */
+.moneys{
+  display: block;
+  text-align: right;
+  font-size: 30rpx;
+
+}
+.ids,.times{
+  color: #C0C0C0;
+  font-size: 24rpx;
+  text-align: left;
+}
+.items{
+  height: 110rpx;
+  border-top: 2rpx solid #efeff5;
+  padding: 0 20rpx;
+}

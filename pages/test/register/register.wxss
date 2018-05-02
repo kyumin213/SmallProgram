@@ -1,0 +1,50 @@
+/* pages/test/register/register.wxss */
+@import "../me/loginpwd/loginpwd.wxss";
+.regiter{
+  background-color: #2D2B29;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.remind{
+  color: #C6B47A;
+  margin:20rpx 0 0 30rpx;
+}
+.agree{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 34rpx;
+  margin: 20rpx 0 0 30rpx;
+  color: #C6B47A;
+  height: 90rpx;
+}
+.agree-use{
+  color: #fff;
+  margin-left: 40rpx;
+}
+.checked{
+  margin-top: 10rpx;
+}
+.submitbtn{
+  margin-top: 20rpx;
+}
+.againpwd{
+position: relative;
+}
+.getcode{
+  position: absolute;
+  top: 10rpx;
+  right: 50rpx;
+  z-index: 99;
+  width: 210rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  line-height: 70rpx;
+  background: #C6B47A;
+  text-align: center;
+  border-radius: 8rpx;
+  color: #fff;
+}
